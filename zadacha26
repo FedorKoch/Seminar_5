@@ -1,0 +1,10 @@
+print("введите число")
+chislo = int(input())
+print("введите степень")
+stepen = int(input())
+def vozved(chislo, stepen):
+    if stepen == 1:
+        return (chislo)
+    else:
+        return (chislo * vozved(chislo, stepen - 1))
+print("результат возведения = ", vozved(chislo, stepen))
